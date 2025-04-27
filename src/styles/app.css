@@ -1,0 +1,32 @@
+* {
+  scroll-behavior: smooth;
+}
+.overFlow {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.navphone {
+  transform: translateY(-100%);
+  transition: all 0.3s;
+}
+.navPhoneComes {
+  transform: translateY(0);
+}
+
+.sticky-header {
+  position: sticky;
+  top: 0;
+  transform: translateY(-80px);
+  animation: stickyHeader 0.3s ease forwards;
+  z-index: 99;
+}
+
+@keyframes stickyHeader {
+  0% {
+    transform: translateY(-80px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

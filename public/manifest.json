@@ -1,0 +1,63 @@
+{
+  "short_name": "Krishna",
+  "name": "Krishna Kolapte | Fullstack Developer",
+  "description": "Welcome to Krishna Kolapte's personal portfolio! A fullstack developer specializing in the MERN stack. Explore my projects, skills, and experience.",
+  "icons": [
+    {
+      "src": "https://res.cloudinary.com/do3egmobd/image/upload/v1701166638/profile-pic_1_ujx5ce.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "https://res.cloudinary.com/do3egmobd/image/upload/v1701166638/profile-pic_1_ujx5ce.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#6b46c1",
+  "orientation": "portrait",
+  "scope": "/",
+  "lang": "en",
+  "dir": "ltr",
+  "prefer_related_applications": false,
+  "screenshots": [
+    {
+      "src": "https://example.com/screenshot1.png",
+      "sizes": "640x480",
+      "type": "image/png",
+      "description": "A screenshot showing my stunning web application interface"
+    },
+    {
+      "src": "https://example.com/screenshot2.png",
+      "sizes": "1280x800",
+      "type": "image/png",
+      "description": "Showcasing an interactive feature of my portfolio"
+    }
+  ],
+  "customization": {
+    "primary_color": "#6b46c1",
+    "accent_color": "#ff6347",
+    "font_family": "Arial, sans-serif",
+    "button_style": "rounded"
+  },
+  "developer_info": {
+    "name": "Krishna Kolapte",
+    "contact": "mailto:dev.krishnakolapte@gmail.com",
+    "social_media": {
+      "linkedin": "https://www.linkedin.com/in/krishnakolapte",
+      "github": "https://github.com/krishnakolapte"
+    }
+  },
+  "features": [
+    "Interactive Web Portfolio",
+    "MERN Stack Expertise",
+    "Responsive Design",
+    "Fast and Scalable Applications"
+  ]
+}
+
