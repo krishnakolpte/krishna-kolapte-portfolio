@@ -178,7 +178,7 @@ exports.sendContactEmail = functions.https.onRequest((req, res) => {
     </div>
     <div class="footer">
       Thanks for connecting! 🚀<br>
-      <a href="https://your-portfolio.com" target="_blank">Visit My Portfolio</a>
+      <a href="https://krishna-kolapte-portfolio.vercel.app" target="_blank">Visit My Portfolio</a>
     </div>
   </div>
 </body>
