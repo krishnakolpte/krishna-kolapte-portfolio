@@ -27,13 +27,19 @@
   "prefer_related_applications": false,
   "screenshots": [
     {
-      "src": "https://example.com/screenshot1.png",
+      "src": "https://res.cloudinary.com/dl1hhfbhd/image/upload/v1745855765/Screenshot_2025-04-28_090933_ffgmlg.png",
       "sizes": "640x480",
       "type": "image/png",
       "description": "A screenshot showing my stunning web application interface"
     },
     {
-      "src": "https://example.com/screenshot2.png",
+      "src": "https://res.cloudinary.com/dl1hhfbhd/image/upload/v1745855765/Screenshot_2025-04-28_090959_rszm21.png",
+      "sizes": "1280x800",
+      "type": "image/png",
+      "description": "Showcasing an interactive feature of my portfolio"
+    },
+    {
+      "src": "https://res.cloudinary.com/dl1hhfbhd/image/upload/v1745855765/Screenshot_2025-04-28_091029_xcbxux.png",
       "sizes": "1280x800",
       "type": "image/png",
       "description": "Showcasing an interactive feature of my portfolio"

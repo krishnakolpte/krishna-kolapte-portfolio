@@ -1,71 +1,94 @@
-import React, { useState } from 'react';
-import { Box, Button, FormControl, FormLabel, Input, Textarea, Heading, Stack, VStack, Text } from '@chakra-ui/react';
-import { toast } from "react-hot-toast";
-import CustomToast from './CostomToast';
+import React, { useEffect, useState } from 'react';
+import {
+  Box,
+  Button,
+  FormControl,
+  FormLabel,
+  Input,
+  Textarea,
+  Heading,
+  Stack,
+  VStack,
+  Text,
+} from '@chakra-ui/react';
+import { toast } from 'react-hot-toast';
 
 const ContactPage = () => {
+  const [myEmail, setMyEmail] = useState('');
   const [formData, setFormData] = useState({
     name: '',
     email: '',
-    message: ''
+    message: '',
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
+
+  useEffect(() => {
+    setMyEmail(process.env.REACT_APP_MY_EMAIL || '');
+  }, []);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prevData) => ({
       ...prevData,
-      [name]: value
+      [name]: value,
     }));
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    const toastId = toast.loading('Sending message...');
-  
-    setIsSubmitting(true);
-  
-    setTimeout(() => {
-      setIsSubmitting(false);
-      toast.dismiss(toastId); // remove loading
-      toast.custom((t) => (
-        <CustomToast message="Message sent successfully!" type="success" />
-      ));
-      setFormData({
-        name: '',
-        email: '',
-        message: ''
+  const sendMailFunction = async (formData) => {
+    try {
+      const response = await fetch(process.env.REACT_APP_FIREBASE_SEND_MAIL_FUNCTION_URL, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
       });
-    }, 2000);
+
+      const data = await response.json();
+
+      if (response.ok) {
+        toast.success('Message sent successfully!');
+        setFormData({ name: '', email: '', message: '' });
+      } else {
+        toast.error(data.message || 'Something went wrong.');
+      }
+    } catch (error) {
+      console.error(error);
+      toast.error('Error sending message: ' + error.message);
+    }
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    if (!formData.name || !formData.email || !formData.message) {
+      toast.error('Please fill all fields.');
+      return;
+    }
+
+    const toastId = toast.loading('Sending message...');
+    setIsSubmitting(true);
+
+    await sendMailFunction(formData);
+
+    setIsSubmitting(false);
+    toast.dismiss(toastId);
   };
 
   return (
     <Box p={{ base: 6, md: 12 }} maxW={['100%', '1100px']} mx="auto">
-      
       {/* Top Title Section */}
       <VStack w="full" spacing={0}>
         <Heading textTransform="capitalize" fontWeight="700">
-          Education
+          Contact Me
         </Heading>
-        <Text
-          fontSize="xl"
-          textTransform="capitalize"
-          fontWeight="700"
-          color="GrayText"
-        >
-          My Education
+        <Text fontSize="xl" textTransform="capitalize" fontWeight="700" color="GrayText">
+          Feel free to reach out
         </Text>
       </VStack>
 
       {/* Contact and Form Section */}
-      <Stack
-        w="full"
-        direction={{ base: 'column' }}
-        spacing={8}
-        align="center"
-        justify="center"
-        mt={12}
-      >
+      <Stack w="full" direction={{ base: 'column' }} spacing={8} align="center" justify="center" mt={12}>
         {/* Email Me Section */}
         <Box w="full" textAlign="center">
           <Heading fontSize="2xl" mb={4}>
@@ -76,8 +99,9 @@ const ContactPage = () => {
             variant="solid"
             size="lg"
             as="a"
-            href="mailto:dev.krishnakolapte@gmail.com"
-            target="_blank" rel="noopener noreferrer"
+            href={`mailto:${myEmail}`}
+            target="_blank"
+            rel="noopener noreferrer"
           >
             Email Me
           </Button>
@@ -85,7 +109,7 @@ const ContactPage = () => {
 
         {/* Form Section */}
         <Box
-          w={{ base: "full", md: "60%" }}
+          w={{ base: 'full', md: '60%' }}
           p={8}
           borderRadius="lg"
           boxShadow="lg"
@@ -152,10 +176,24 @@ const ContactPage = () => {
           Or connect with me on social media
         </Heading>
         <Stack direction="row" justify="center" spacing={6}>
-          <Button target="_blank" rel="noopener noreferrer" as="a" href="https://github.com/krishnakolpte" colorScheme="gray" variant="outline">
+          <Button
+            target="_blank"
+            rel="noopener noreferrer"
+            as="a"
+            href="https://github.com/krishnakolpte"
+            colorScheme="gray"
+            variant="outline"
+          >
             GitHub
           </Button>
-          <Button target="_blank" rel="noopener noreferrer" as="a" href="https://linkedin.com/in/krishnakolapte" colorScheme="blue" variant="outline">
+          <Button
+            target="_blank"
+            rel="noopener noreferrer"
+            as="a"
+            href="https://linkedin.com/in/krishnakolapte"
+            colorScheme="blue"
+            variant="outline"
+          >
             LinkedIn
           </Button>
         </Stack>
