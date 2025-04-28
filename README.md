@@ -1,116 +1,68 @@
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Available Scripts
 
-# Krishna Kolapte Portfolio 
+In the project directory, you can run:
 
+### `npm start`
 
-A clean, responsive, and professional **Portfolio Website** built to showcase my projects, skills, and contact information.
+Runs the app in the development mode.<br />
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-Hosted on **Vercel** | Backend Functions deployed with **Firebase Functions**.
+The page will reload if you make edits.<br />
+You will also see any lint errors in the console.
 
+### `npm test`
 
-## 🚀 Live Demo
+Launches the test runner in the interactive watch mode.<br />
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-👉 [Visit Portfolio](https://krishna-kolapte-portfolio.vercel.app)
+### `npm run build`
 
+Builds the app for production to the `build` folder.<br />
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-## 📸 Screenshots
+The build is minified and the filenames include the hashes.<br />
+Your app is ready to be deployed!
 
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-![Project Screenshot](https://res.cloudinary.com/dl1hhfbhd/image/upload/v1745855765/Screenshot_2025-04-28_090933_ffgmlg.png)
+### `npm run eject`
 
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-## ✨ Features
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-- Fully responsive and mobile-first design
-- Beautiful and modern UI/UX
-- Smooth navigation between sections
-- SEO Optimized with Open Graph Metadata and Structured Data (Schema.org)
-- Contact form powered by Firebase Functions
-- Hosted on Vercel for fast loading and global CDN
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
+## Learn More
 
-## 🛠️ Tech Stack
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-- **Frontend:** React.js, Chakra UI, EmailJS
-- **Backend:** Firebase Functions (for contact form)
-- **Hosting:** Vercel
-- **Others:** SEO Optimization (Meta tags, OG tags)
+To learn React, check out the [React documentation](https://reactjs.org/).
 
+### Code Splitting
 
-## 📂 Folder Structure
+This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
 
-```bash
-├── public/
-│   ├── index.html
-│   ├── manifest.json
-├── src/
-│   ├── assets/
-│   ├── components/
-│   ├── pages/
-│   ├── App.js
-│   └── index.js
-├── functions/ (Firebase Functions)
-├── .env
-├── .gitignore
-├── README.md
-└── package.json
-```
+### Analyzing the Bundle Size
 
+This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
 
-## ⚡ Deployment
+### Making a Progressive Web App
 
-### Frontend Deployment (Vercel)
+This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
 
-```bash
-npm run build
-vercel --prod
-```
+### Advanced Configuration
 
-### Backend Deployment (Firebase Functions)
+This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
 
-```bash
-cd functions
-npm install
-firebase deploy --only functions
-```
+### Deployment
 
+This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
 
-## 🧠 Challenges Faced
+### `npm run build` fails to minify
 
-- Perfecting SEO optimization with structured data and meta tags.
-- Securely handling form submissions with serverless Firebase Functions.
-- Designing a mobile-first, fully responsive interface.
-
-
-## 📚 What I Learned
-
-- Strengthened knowledge in React.js and Chakra UI for frontend development.
-- Hands-on experience with Vercel hosting and Firebase Functions.
-- Advanced SEO techniques for personal websites.
-- Improved UI/UX design thinking.
-
-
-## 📬 Contact
-
-- **LinkedIn:** [Krishna Kolapte](https://www.linkedin.com/in/krishnakolapte)
-- **GitHub:** [@krishnakolpte](https://github.com/krishnakolpte)
-- **Email:** [krishnakolpte@example.com](mailto:krishnakolpte@example.com)
-
-
-## 🙏 Acknowledgements
-
-Thanks to:
-
-- The open-source community
-- Chakra UI documentation
-- Firebase and Vercel teams for the deployment platforms
-
-
-## ⭐ Support
-
-If you like this project, feel free to **star** it on GitHub and share it with others!
-
-
-
-
+This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
