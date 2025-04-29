@@ -7,7 +7,7 @@ export const recentProjects = [
     description: "My personal portfolio website featuring dark mode, animations, and responsive design.",
     techStack: ["React.js", "Chakra UI", "Framer Motion","Firebase"],
     image: "https://res.cloudinary.com/dl1hhfbhd/image/upload/v1745855765/Screenshot_2025-04-28_090933_ffgmlg.png",
-    liveLink: "https://my-modern-portfolio.com",
+    liveLink: "https://krishna-kolapte-portfolio.vercel.app/",
     githubLink: "https://github.com/krishnakolpte/krishna-kolapte-portfolio",
   },
   {
@@ -28,7 +28,7 @@ export const recentProjects = [
       description: "My personal portfolio website featuring dark mode, animations, and responsive design.",
       techStack: ["React.js", "Chakra UI", "Framer Motion", "Firebase"],
       image: "https://res.cloudinary.com/dl1hhfbhd/image/upload/v1745855765/Screenshot_2025-04-28_090933_ffgmlg.png",
-      liveLink: "https://my-modern-portfolio.com",
+      liveLink: "https://krishna-kolapte-portfolio.vercel.app/",
       githubLink: "https://github.com/krishnakolpte/krishna-kolapte-portfolio",
     },
     {
