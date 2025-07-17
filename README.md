@@ -95,7 +95,7 @@ firebase deploy --only functions
 
 - **LinkedIn:** [Krishna Kolapte](https://www.linkedin.com/in/krishnakolapte)
 - **GitHub:** [@krishnakolpte](https://github.com/krishnakolpte)
-- **Email:** [krishnakolpte@example.com](mailto:work.krishnakolapte@gmail.com)
+- **Email:** [work.krishnakolapte@gmail.com](mailto:work.krishnakolapte@gmail.com)
 
 
 ## 🙏 Acknowledgements
