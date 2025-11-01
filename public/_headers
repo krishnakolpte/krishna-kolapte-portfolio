@@ -1,3 +1,11 @@
+/*
+  Content-Security-Policy: default-src 'self'; script-src 'self'; object-src 'none'
+  Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+  X-Frame-Options: DENY
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: no-referrer-when-downgrade
+  Permissions-Policy: geolocation=(), microphone=()
+
 /sitemap.xml
   Content-Type: application/xml; charset=utf-8
 
