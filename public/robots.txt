@@ -1,6 +1,4 @@
-# https://www.robotstxt.org/robotstxt.html
 User-agent: *
 Allow: /
 
-# Point to your sitemap to help search engines find your pages
 Sitemap: https://krishna-kolapte-portfolio.vercel.app/sitemap.xml
